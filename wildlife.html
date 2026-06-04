@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wildlife Safaris | Aaradhya Tours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.tour-intro{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;}
+.tour-intro-img{height:460px;border-radius:4px;overflow:hidden;position:relative;}
+.tour-intro-img-inner{position:absolute;inset:0;}
+.tour-intro p{font-size:.92rem;color:#777;line-height:1.8;margin-bottom:14px;font-weight:300;}
+.inclusions-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;}
+.inclusion-item{display:flex;align-items:flex-start;gap:12px;padding:14px;background:#fff;border-radius:4px;box-shadow:0 2px 14px rgba(44,24,16,.06);}
+.inclusion-icon{font-size:1.2rem;flex-shrink:0;}
+.inclusion-text{font-size:.82rem;color:#666;line-height:1.5;}
+.inclusion-text strong{display:block;color:var(--brown);font-size:.88rem;margin-bottom:2px;}
+.pkg-4-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+.destinations-banner{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;}
+.dest-mini{height:120px;border-radius:4px;overflow:hidden;position:relative;cursor:pointer;}
+.dest-mini div{position:absolute;inset:0;transition:transform .5s;}
+.dest-mini:hover div{transform:scale(1.08);}
+.dest-mini-label{position:absolute;bottom:0;left:0;right:0;padding:8px 10px;background:linear-gradient(to top,rgba(0,0,0,.7),transparent);color:#fff;font-size:.7rem;font-weight:600;text-align:center;}
+@media(max-width:900px){.tour-intro{grid-template-columns:1fr;}.pkg-4-grid{grid-template-columns:1fr 1fr;}.destinations-banner{grid-template-columns:repeat(3,1fr);}}
+@media(max-width:560px){.pkg-4-grid{grid-template-columns:1fr;}.inclusions-grid{grid-template-columns:1fr;}.destinations-banner{grid-template-columns:1fr 1fr;}}
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-banner">
+  <div class="page-banner-bg" style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=1600&h=600&q=82') center/cover no-repeat;"></div>
+  <div class="page-banner-overlay"></div>
+  <div class="page-banner-content">
+    <div class="page-breadcrumb"><a href="aaradhya-tours.html">Home</a> → <a href="packages.html">Packages</a> → Wildlife Safaris</div>
+    <h1><em>Wildlife Safaris</em></h1>
+    <p>India's wild heart — tigers, elephants, rhinos and rare birds in their natural habitat.</p>
+  </div>
+</div>
+<section>
+  <div class="tour-intro">
+    <div>
+      <span class="section-tag">✦ Wildlife Safaris</span>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:2.3rem;font-weight:700;color:var(--brown);margin:10px 0 18px;line-height:1.1;">Why Choose a<br><em style="color:var(--maroon);">Wildlife Safaris?</em></h2>
+      <p>India is one of the world's great wildlife destinations, home to the Royal Bengal Tiger, Asiatic Lion, Indian One-Horned Rhinoceros, Snow Leopard, and over 1,300 species of birds. With 50+ national parks and countless wildlife sanctuaries spread across the subcontinent's diverse ecosystems — from Himalayan alpine forests to tropical rainforests and mangrove swamps — India offers safari experiences as varied as the landscapes themselves.</p><p>Aaradhya Tours works exclusively with government-licensed naturalists and certified wildlife guides. Our safari vehicles are unobtrusive and respectful of the animals and environment. We believe in low-impact, high-awareness wildlife tourism that supports conservation and the local communities who are the true guardians of India's wild places.</p>
+      <a href="contact.html" class="btn-primary" style="margin-top:12px;">✦ Enquire Now</a>
+    </div>
+    <div class="tour-intro-img"><img src="https://images.unsplash.com/photo-1561731216-c3a4d99437d5?auto=format&fit=crop&w=800&h=520&q=82" alt="" style="width:100%;height:100%;object-fit:cover;border-radius:4px;" loading="lazy"></div>
+  </div>
+</section>
+<section style="background:var(--cream);">
+  <div class="section-header">
+    <span class="section-tag">✦ What's Included</span>
+    <h2 class="section-title">Everything You <em>Need</em></h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="inclusions-grid"><div class="inclusion-item" data-reveal><div class="inclusion-icon">🚙</div><div class="inclusion-text"><strong>Certified Safari Jeeps</strong>Open gypsies with experienced, Forest Department-certified naturalist guides for all national park zones.</div></div><div class="inclusion-item" data-reveal><div class="inclusion-icon">🐯</div><div class="inclusion-text"><strong>Zone Access</strong>We book the best safari zones in each park for maximum wildlife sighting probability based on current activity.</div></div><div class="inclusion-item" data-reveal><div class="inclusion-icon">🎯</div><div class="inclusion-text"><strong>Expert Naturalists</strong>Guides with 10+ years of park experience who can identify birds, track pugmarks, and read animal behaviour.</div></div><div class="inclusion-item" data-reveal><div class="inclusion-icon">🏕️</div><div class="inclusion-text"><strong>Jungle Lodges</strong>Carefully selected eco-lodges and jungle resorts close to park gates — from budget to luxury options.</div></div><div class="inclusion-item" data-reveal><div class="inclusion-icon">📸</div><div class="inclusion-text"><strong>Photography Support</strong>Telephoto lens rental, optimal light timing safaris, and photography-specific guidance on every trip.</div></div><div class="inclusion-item" data-reveal><div class="inclusion-icon">🌿</div><div class="inclusion-text"><strong>Conservation Focus</strong>We donate a portion of every wildlife booking to wildlife corridor projects in our partner parks.</div></div><div class="inclusion-item" data-reveal><div class="inclusion-icon">🦜</div><div class="inclusion-text"><strong>Birding Specialisation</strong>Dedicated birding tours with expert bird guides for India's 1,300+ bird species.</div></div><div class="inclusion-item" data-reveal><div class="inclusion-icon">🌅</div><div class="inclusion-text"><strong>Multiple Safaris</strong>All packages include both morning and evening safaris for maximum sighting opportunities.</div></div></div>
+</section>
+<section class="section-dark">
+  <div class="section-header">
+    <span class="section-tag">✦ Featured Packages</span>
+    <h2 class="section-title light">Wildlife Safaris <em style="color:var(--gold-light);">Packages</em></h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="pkg-4-grid"><div class="pkg-card" data-reveal>
+  <div class="pkg-img"><div class="pkg-img-bg" style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&h=260&q=80') center/cover no-repeat;transition:transform .6s;"></div><span class="pkg-badge">🐯</span></div>
+  <div class="pkg-body">
+    <div class="pkg-meta"><span>🕐 5D/4N</span><span>🏨 Jungle Lodge</span></div>
+    <div class="pkg-name">Ranthambore Tiger</div>
+    <div class="pkg-desc">Ranthambore NP · Agra</div>
+    <div class="pkg-footer"><div><div class="pkg-price-label">Starting from</div><div class="pkg-price">bg-rajasthan</div></div>
+    <button class="pkg-book" onclick="location.href='contact.html'">Book Now</button></div>
+  </div>
+</div><div class="pkg-card" data-reveal>
+  <div class="pkg-img"><div class="pkg-img-bg" style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&h=260&q=80') center/cover no-repeat;transition:transform .6s;"></div><span class="pkg-badge">🦏</span></div>
+  <div class="pkg-body">
+    <div class="pkg-meta"><span>🕐 6D/5N</span><span>🏨 Eco-Resort</span></div>
+    <div class="pkg-name">Kaziranga Rhino</div>
+    <div class="pkg-desc">Kaziranga · Majuli Island</div>
+    <div class="pkg-footer"><div><div class="pkg-price-label">Starting from</div><div class="pkg-price">bg-kerala</div></div>
+    <button class="pkg-book" onclick="location.href='contact.html'">Book Now</button></div>
+  </div>
+</div><div class="pkg-card" data-reveal>
+  <div class="pkg-img"><div class="pkg-img-bg" style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&h=260&q=80') center/cover no-repeat;transition:transform .6s;"></div><span class="pkg-badge">🐯</span></div>
+  <div class="pkg-body">
+    <div class="pkg-meta"><span>🕐 5D/4N</span><span>🏨 Jungle Lodge</span></div>
+    <div class="pkg-name">Jim Corbett</div>
+    <div class="pkg-desc">Corbett NP · Nainital</div>
+    <div class="pkg-footer"><div><div class="pkg-price-label">Starting from</div><div class="pkg-price">bg-uttarakhand</div></div>
+    <button class="pkg-book" onclick="location.href='contact.html'">Book Now</button></div>
+  </div>
+</div><div class="pkg-card" data-reveal>
+  <div class="pkg-img"><div class="pkg-img-bg" style="position:absolute;inset:0;background:url('https://images.unsplash.com/photo-1564507592333-c60657eea523?auto=format&fit=crop&w=600&h=260&q=80') center/cover no-repeat;transition:transform .6s;"></div><span class="pkg-badge">🦁</span></div>
+  <div class="pkg-body">
+    <div class="pkg-meta"><span>🕐 5D/4N</span><span>🏨 Forest Lodge</span></div>
+    <div class="pkg-name">Gir Lion Safari</div>
+    <div class="pkg-desc">Gir NP · Somnath</div>
+    <div class="pkg-footer"><div><div class="pkg-price-label">Starting from</div><div class="pkg-price">bg-goa</div></div>
+    <button class="pkg-book" onclick="location.href='contact.html'">Book Now</button></div>
+  </div>
+</div></div>
+</section>
+<section>
+  <div class="section-header">
+    <span class="section-tag">✦ Popular Destinations</span>
+    <h2 class="section-title">Top Spots for <em>Wildlife Safaris</em></h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="destinations-banner"><a href="rajasthan.html" class="dest-mini" style="text-decoration:none;display:block;"><div class="bg-rajasthan"></div><div class="dest-mini-label">Ranthambore</div></a><a href="uttarakhand.html" class="dest-mini" style="text-decoration:none;display:block;"><div class="bg-uttarakhand"></div><div class="dest-mini-label">Jim Corbett</div></a><a href="contact.html" class="dest-mini" style="text-decoration:none;display:block;"><div class="bg-kerala"></div><div class="dest-mini-label">Kaziranga</div></a><a href="kerala.html" class="dest-mini" style="text-decoration:none;display:block;"><div class="bg-kerala"></div><div class="dest-mini-label">Periyar</div></a><a href="contact.html" class="dest-mini" style="text-decoration:none;display:block;"><div class="bg-goa"></div><div class="dest-mini-label">Gir</div></a></div>
+</section>
+<div class="cta-strip">
+  <h2>Plan Your Perfect Wildlife Safaris</h2>
+  <p>Every detail personalised. Every moment extraordinary. Let's begin.</p>
+  <div class="btn-group">
+    <a href="contact.html" class="btn-primary">✦ Get Custom Quote</a>
+    <a href="packages.html" class="btn-outline-light">Browse All Packages →</a>
+  </div>
+</div>
+<div id="footer-placeholder"></div>
+<script src="shared.js"></script>
+</body>
+</html>
