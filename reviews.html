@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traveller Reviews | Aaradhya Tours</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+.rating-overview{display:grid;grid-template-columns:200px 1fr;gap:40px;align-items:center;background:#fff;border-radius:4px;padding:32px;box-shadow:0 4px 24px rgba(44,24,16,.07);margin-bottom:40px;}
+.rating-big{text-align:center;}
+.rating-score{font-family:'Cormorant Garamond',serif;font-size:5rem;font-weight:700;color:var(--maroon);line-height:1;}
+.rating-stars{color:var(--gold);font-size:1.2rem;margin:6px 0;}
+.rating-count{font-size:.75rem;color:#aaa;}
+.rating-bars{flex:1;}
+.bar-row{display:flex;align-items:center;gap:12px;margin-bottom:8px;}
+.bar-label{font-size:.75rem;color:#888;width:40px;}
+.bar-track{flex:1;height:8px;background:#f0e8e0;border-radius:4px;overflow:hidden;}
+.bar-fill{height:100%;border-radius:4px;background:linear-gradient(to right,var(--saffron),var(--gold));}
+.bar-pct{font-size:.72rem;color:#aaa;width:32px;text-align:right;}
+.reviews-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.review-form{background:#fff;border-radius:4px;padding:36px;box-shadow:0 4px 24px rgba(44,24,16,.07);max-width:680px;margin:0 auto;}
+.star-select{display:flex;gap:6px;margin-bottom:16px;}
+.star-select span{font-size:1.6rem;cursor:pointer;color:#ddd;transition:color .2s;}
+.star-select span.lit,.star-select span:hover{color:var(--gold);}
+@media(max-width:768px){.reviews-grid{grid-template-columns:1fr;} .rating-overview{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<div id="nav-placeholder"></div>
+
+<div class="page-banner">
+  <div class="page-banner-bg bg-varanasi" style="opacity:.6"></div>
+  <div class="page-banner-overlay"></div>
+  <div class="page-banner-content">
+    <div class="page-breadcrumb"><a href="aaradhya-tours.html">Home</a> → Reviews</div>
+    <h1>Traveller <em>Stories</em></h1>
+    <p>Real experiences from real travellers. 12,000+ journeys, 12,000+ smiles.</p>
+  </div>
+</div>
+
+<section>
+  <div class="rating-overview">
+    <div class="rating-big">
+      <div class="rating-score">4.9</div>
+      <div class="rating-stars">★★★★★</div>
+      <div class="rating-count">Based on 1,240 reviews</div>
+    </div>
+    <div class="rating-bars">
+      <div class="bar-row"><span class="bar-label">5 ★</span><div class="bar-track"><div class="bar-fill" style="width:88%"></div></div><span class="bar-pct">88%</span></div>
+      <div class="bar-row"><span class="bar-label">4 ★</span><div class="bar-track"><div class="bar-fill" style="width:9%"></div></div><span class="bar-pct">9%</span></div>
+      <div class="bar-row"><span class="bar-label">3 ★</span><div class="bar-track"><div class="bar-fill" style="width:2%"></div></div><span class="bar-pct">2%</span></div>
+      <div class="bar-row"><span class="bar-label">2 ★</span><div class="bar-track"><div class="bar-fill" style="width:1%"></div></div><span class="bar-pct">1%</span></div>
+      <div class="bar-row"><span class="bar-label">1 ★</span><div class="bar-track"><div class="bar-fill" style="width:0%"></div></div><span class="bar-pct">0%</span></div>
+    </div>
+  </div>
+
+  <div class="filter-bar" style="margin-bottom:28px;">
+    <button class="filter-btn active">All Reviews</button>
+    <button class="filter-btn">5 Star</button>
+    <button class="filter-btn">Honeymoon</button>
+    <button class="filter-btn">Family</button>
+    <button class="filter-btn">Adventure</button>
+    <button class="filter-btn">Spiritual</button>
+  </div>
+
+  <div class="reviews-grid"><div class="testi-card" data-reveal>
+  <div class="testi-stars">★★★★★</div>
+  <div class="testi-text">"The Kerala houseboat experience was beyond words. Every detail — from the sunrise cruise to the Ayurvedic spa — was arranged perfectly. Aaradhya Tours made our anniversary truly unforgettable."</div>
+  <div class="testi-author">
+    <div class="testi-avatar" style="background:linear-gradient(135deg,#E8651A,#C9922A)">P</div>
+    <div><div class="testi-name">Priya Menon</div><div class="testi-trip">Kerala Backwater Bliss · Mumbai</div></div>
+  </div>
+</div><div class="testi-card" data-reveal>
+  <div class="testi-stars">★★★★★</div>
+  <div class="testi-text">"Leh-Ladakh was on my bucket list for 10 years. The team handled everything — acclimatisation, permits, luxury camping at Pangong. Absolutely life-changing journey!"</div>
+  <div class="testi-author">
+    <div class="testi-avatar" style="background:linear-gradient(135deg,#1A4A6B,#2A7AB8)">R</div>
+    <div><div class="testi-name">Rohit Sharma</div><div class="testi-trip">Leh-Ladakh Expedition · Bengaluru</div></div>
+  </div>
+</div><div class="testi-card" data-reveal>
+  <div class="testi-stars">★★★★★</div>
+  <div class="testi-text">"We did the Golden Triangle with our two kids. The guide was brilliant — made history come alive! Hotel choices were impeccable and the Taj Mahal sunrise was magical."</div>
+  <div class="testi-author">
+    <div class="testi-avatar" style="background:linear-gradient(135deg,#2D5016,#4A8A2A)">A</div>
+    <div><div class="testi-name">Anita Kapoor</div><div class="testi-trip">Golden Triangle Classic · Hyderabad</div></div>
+  </div>
+</div><div class="testi-card" data-reveal>
+  <div class="testi-stars">★★★★★</div>
+  <div class="testi-text">"Our honeymoon in Rajasthan was straight out of a fairy tale. Staying in Umaid Bhawan Palace was a dream. Aaradhya team handled every detail with care and elegance."</div>
+  <div class="testi-author">
+    <div class="testi-avatar" style="background:linear-gradient(135deg,#7B1A3A,#4A0E22)">V</div>
+    <div><div class="testi-name">Vikram Joshi</div><div class="testi-trip">Royal Rajasthan Romance · Delhi</div></div>
+  </div>
+</div><div class="testi-card" data-reveal>
+  <div class="testi-stars">★★★★★</div>
+  <div class="testi-text">"Five perfect days in Goa! The resort they chose was stunning and the private boat tour was unexpected and amazing. Will definitely book with them again for our next trip."</div>
+  <div class="testi-author">
+    <div class="testi-avatar" style="background:linear-gradient(135deg,#1A4A3A,#2A8A7A)">S</div>
+    <div><div class="testi-name">Sneha Reddy</div><div class="testi-trip">Goa Sun & Soul · Chennai</div></div>
+  </div>
+</div><div class="testi-card" data-reveal>
+  <div class="testi-stars">★★★★</div>
+  <div class="testi-text">"A profoundly moving spiritual experience. The morning boat ride on the Ganges at sunrise is something I will never forget. Guide Ramesh was exceptionally knowledgeable."</div>
+  <div class="testi-author">
+    <div class="testi-avatar" style="background:linear-gradient(135deg,#C9922A,#E8B84B)">M</div>
+    <div><div class="testi-name">Madhav Pillai</div><div class="testi-trip">Sacred Varanasi · Kochi</div></div>
+  </div>
+</div><div class="testi-card" data-reveal>
+  <div class="testi-stars">★★★★★</div>
+  <div class="testi-text">"The Char Dham Yatra package was flawlessly organised. Even the remote Kedarnath segment was handled brilliantly. My family is grateful for this sacred journey."</div>
+  <div class="testi-author">
+    <div class="testi-avatar" style="background:linear-gradient(135deg,#4A2A8A,#7A5ACA)">N</div>
+    <div><div class="testi-name">Neha Gupta</div><div class="testi-trip">Char Dham Yatra · Pune</div></div>
+  </div>
+</div><div class="testi-card" data-reveal>
+  <div class="testi-stars">★★★★★</div>
+  <div class="testi-text">"Havelock Island was paradise! The snorkelling at Elephant Beach was incredible. Everything from ferry bookings to hotels was perfectly organised. Zero hassles!"</div>
+  <div class="testi-author">
+    <div class="testi-avatar" style="background:linear-gradient(135deg,#E8651A,#C9922A)">K</div>
+    <div><div class="testi-name">Kiran Das</div><div class="testi-trip">Andaman Island Paradise · Kolkata</div></div>
+  </div>
+</div><div class="testi-card" data-reveal>
+  <div class="testi-stars">★★★★★</div>
+  <div class="testi-text">"Manali in winter was breathtaking. Our kids had a blast in the snow at Rohtang. The Dharamshala monastery visit was deeply spiritual. Exceptional experience overall."</div>
+  <div class="testi-author">
+    <div class="testi-avatar" style="background:linear-gradient(135deg,#2D5016,#4A8A2A)">T</div>
+    <div><div class="testi-name">Thomas Mathew</div><div class="testi-trip">Himachal Highlights · Goa</div></div>
+  </div>
+</div></div>
+</section>
+
+<section style="background:var(--cream);">
+  <div class="section-header">
+    <span class="section-tag">✦ Share Your Experience</span>
+    <h2 class="section-title">Write a <em>Review</em></h2>
+    <div class="section-rule"></div>
+  </div>
+  <div class="review-form">
+    <p style="font-size:.85rem;color:#888;margin-bottom:22px;">Travelled with us? We'd love to hear your story.</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+      <div class="form-group"><label>Your Name</label><input type="text" placeholder="Full Name"></div>
+      <div class="form-group"><label>Package Taken</label><select><option>Golden Triangle Classic</option><option>Kerala Backwater Bliss</option><option>Leh-Ladakh Expedition</option><option>Other</option></select></div>
+    </div>
+    <div class="form-group"><label>Your Rating</label>
+      <div class="star-select" id="stars">
+        <span onclick="setStars(1)">★</span><span onclick="setStars(2)">★</span>
+        <span onclick="setStars(3)">★</span><span onclick="setStars(4)">★</span><span onclick="setStars(5)">★</span>
+      </div>
+    </div>
+    <div class="form-group"><label>Your Review</label><textarea placeholder="Tell us about your experience..."></textarea></div>
+    <button class="btn-primary" onclick="showToast('✦ Thank you! Your review has been submitted for moderation.')">Submit Review ✦</button>
+  </div>
+</section>
+
+<script>
+let currentRating = 0;
+function setStars(n) {
+  currentRating = n;
+  document.querySelectorAll('#stars span').forEach((s,i) => {
+    s.classList.toggle('lit', i < n);
+  });
+}
+</script>
+
+
+<div class="cta-strip">
+  <h2>Ready to Create Your Own Story?</h2>
+  <p>Join 12,000+ travellers who have trusted Aaradhya Tours for journeys that last a lifetime.</p>
+  <div class="btn-group">
+    <a href="packages.html" class="btn-primary">✦ Browse Packages</a>
+    <a href="contact.html" class="btn-outline-light">Plan My Trip →</a>
+  </div>
+</div>
+<div id="footer-placeholder"></div>
+<script src="shared.js"></script>
+</body>
+</html>
